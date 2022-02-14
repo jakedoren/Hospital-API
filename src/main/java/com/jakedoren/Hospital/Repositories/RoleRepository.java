@@ -1,10 +1,10 @@
 package com.jakedoren.Hospital.Repositories;
 
-import com.jakedoren.Hospital.Models.User;
+import com.jakedoren.Hospital.Models.Role;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Component;
 
 @Component
-public interface UserRepository extends MongoRepository<User, String> {
-    User findByUsername(String username);
+public interface RoleRepository extends MongoRepository<Role, String> {
+    Role findByName(String name);
 }
